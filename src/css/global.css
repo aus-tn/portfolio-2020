@@ -80,7 +80,7 @@ nav .fa-bars {
   font-size: 22px; }
 
 #nav-content,
-nav .fa-times-circle {
+nav .fa-times {
   display: none; }
 
 #nav-links {
@@ -89,7 +89,7 @@ nav .fa-times-circle {
   left: 20px;
   width: 100%; }
 
-nav .fa-times-circle {
+nav .fa-times {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -206,3 +206,12 @@ nav .fa-times-circle {
 .btn:hover {
   color: #fff;
   background-color: transparent; }
+
+/*-- internal sections--*/
+#tri-right-bottom-lp {
+  clip-path: polygon(46% 52%, 100% 0, 100% 100%, 0 100%);
+  bottom: 0; }
+
+#tri-right-top-lp {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 51%);
+  top: 0; }
