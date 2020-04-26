@@ -1,5 +1,17 @@
 /*--- global ---*/
 
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+$font-header: "Manrope", sans-serif;
+$font-body: "Roboto Condensed", sans-serif;
+$orange: #ff6e61;
+$blue-light: #479dff;
+$blue-dark: #3b72b3;
+$gray: #333;
+$white: #fff;
+
 html,
 body {
 	height: 100%;
@@ -8,17 +20,8 @@ body {
 body {
 	height: 100vh;
 	margin: 0;
+	font-family: $font-body;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
-
-$font-header: "Manrope", sans-serif;
-//$font-body: ;
-$orange: #ff6e61;
-$blue-light: #479dff;
-$blue-dark: #3b72b3;
-$gray: #333;
-$white: #fff;
 
 body {
 	color: $white;
@@ -43,6 +46,12 @@ h2 {
 	@extend %header;
 	font-weight: 500;
 	font-size: 30px;
+}
+
+h3 {
+	@extend %header;
+	font-size: 20px;
+	font-weight: 400;
 }
 
 /*--- logo ---*/
@@ -185,33 +194,41 @@ nav .fa-times-circle {
 }
 
 @media (max-width: 1000px) {
-	.tri-left {
-		background-color: $blue-light;
-	}
-	.tri-right-top {
-		background-color: $blue-dark;
-	}
-	.tri-left,
-	.tri-right-top,
-	.tri-right-bottom {
+	%tri-mobile {
 		width: 100%;
 		position: relative;
 		clear: both;
 	}
 	.tri-left {
+		@extend %tri-mobile;
 		height: inherit;
+		background-color: $blue-light;
 	}
-	.tri-right-bottom .tri-content {
-		margin-top: 0;
+	.tri-right-top {
+		@extend %tri-mobile;
+		background-color: $blue-dark;
 	}
-	.tri-left .tri-content,
-	.tri-right-top .tri-content,
-	.tri-right-bottom .tri-content {
-		-webkit-clip-path: url(#mobile-clip);
-		clip-path: url(#mobile-clip);
+	.tri-right-bottom {
+		@extend %tri-mobile;
+		margin-top: -25px;
+	}
+	%tri-content-mobile {
 		margin-left: 0;
 		width: 80%;
 		padding: 0 10%;
+	}
+	.tri-left .tri-content,
+	.tri-right-top .tri-content {
+		@extend %tri-content-mobile;
+		-webkit-clip-path: url(#mobile-clip);
+		clip-path: url(#mobile-clip);
+	}
+	.tri-right-bottom .tri-content {
+		@extend %tri-content-mobile;
+		margin-top: 0;
+	}
+	.tri-content h2 {
+		padding-top: 60px;
 	}
 }
 
@@ -222,8 +239,13 @@ nav .fa-times-circle {
 	width: auto;
 }
 
+.tri-left .tri-content h3 {
+	margin-top: 60px;
+}
+
 #brand-logos {
 	width: 80%;
+	margin-left: -15px;
 }
 
 #brand-logos img {
@@ -241,10 +263,21 @@ nav .fa-times-circle {
 /*--- buttons ---*/
 
 %btn {
-	border: 3px solid $white;
 	border-radius: 4px;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-family: $font-body;
+	border: 3px solid $white;
 }
 
 .btn {
 	@extend %btn;
+	color: $gray;
+	background-color: $white;
+}
+
+.btn:hover {
+	@extend %btn;
+	color: $white;
+	background-color: transparent;
 }

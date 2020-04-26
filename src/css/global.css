@@ -1,18 +1,20 @@
 /*--- global ---*/
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 html,
 body {
   height: 100%; }
 
 body {
   height: 100vh;
-  margin: 0; }
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif; }
 
 body {
   color: #fff; }
 
 /*--- headers ---*/
-h1, h2 {
+h1, h2, h3 {
   font-family: "Manrope", sans-serif;
   text-transform: uppercase; }
 
@@ -24,6 +26,10 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 30px; }
+
+h3 {
+  font-size: 20px;
+  font-weight: 400; }
 
 /*--- logo ---*/
 header {
@@ -139,36 +145,42 @@ nav .fa-times-circle {
   text-align: center; }
 
 @media (max-width: 1000px) {
-  .tri-left {
-    background-color: #479dff; }
-  .tri-right-top {
-    background-color: #3b72b3; }
-  .tri-left,
-  .tri-right-top,
-  .tri-right-bottom {
+  .tri-left, .tri-right-top, .tri-right-bottom {
     width: 100%;
     position: relative;
     clear: both; }
   .tri-left {
-    height: inherit; }
-  .tri-right-bottom .tri-content {
-    margin-top: 0; }
+    height: inherit;
+    background-color: #479dff; }
+  .tri-right-top {
+    background-color: #3b72b3; }
+  .tri-right-bottom {
+    margin-top: -25px; }
   .tri-left .tri-content,
-  .tri-right-top .tri-content,
-  .tri-right-bottom .tri-content {
-    -webkit-clip-path: url(#mobile-clip);
-    clip-path: url(#mobile-clip);
+  .tri-right-top .tri-content, .tri-right-bottom .tri-content {
     margin-left: 0;
     width: 80%;
-    padding: 0 10%; } }
+    padding: 0 10%; }
+  .tri-left .tri-content,
+  .tri-right-top .tri-content {
+    -webkit-clip-path: url(#mobile-clip);
+    clip-path: url(#mobile-clip); }
+  .tri-right-bottom .tri-content {
+    margin-top: 0; }
+  .tri-content h2 {
+    padding-top: 60px; } }
 
 /*--- home ---*/
 #currentJob {
   height: 22px;
   width: auto; }
 
+.tri-left .tri-content h3 {
+  margin-top: 60px; }
+
 #brand-logos {
-  width: 80%; }
+  width: 80%;
+  margin-left: -15px; }
 
 #brand-logos img {
   width: 75px;
@@ -180,6 +192,17 @@ nav .fa-times-circle {
     width: 100%; } }
 
 /*--- buttons ---*/
+.btn, .btn:hover {
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  border: 3px solid #fff; }
+
 .btn {
-  border: 3px solid #fff;
-  border-radius: 4px; }
+  color: #333;
+  background-color: #fff; }
+
+.btn:hover {
+  color: #fff;
+  background-color: transparent; }

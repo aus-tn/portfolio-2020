@@ -25,27 +25,26 @@ $(document).ready(function () {
 /*--- Lottie ---*/
 
 //Showcase
-var lottieShowCase = document.getElementById('lottieShowCase');
 lottie.loadAnimation({
-    container: element, // the dom element that will contain the animation
+    container: document.getElementById('lottieShowCase'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
     path: 'lottie/showcase.json'
 });
 
-/*Process
+//Process
 lottie.loadAnimation({
-    container: element, // the dom element that will contain the animation
+    container: document.getElementById('lottieProcess'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'data.json'
+    path: 'lottie/process.json'
 });
 
-//Research
+/*Research
 lottie.loadAnimation({
-    container: element, // the dom element that will contain the animation
+    container: element,
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -54,7 +53,7 @@ lottie.loadAnimation({
 
 //Build
 lottie.loadAnimation({
-    container: element, // the dom element that will contain the animation
+    container: element,
     renderer: 'svg',
     loop: true,
     autoplay: true,
@@ -63,7 +62,7 @@ lottie.loadAnimation({
 
 //Test
 lottie.loadAnimation({
-    container: element, // the dom element that will contain the animation
+    container: element,
     renderer: 'svg',
     loop: true,
     autoplay: true,
