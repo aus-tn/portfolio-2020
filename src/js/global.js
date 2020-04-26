@@ -7,7 +7,7 @@ $(document).ready(function () {
             'width': '100%',
             'height': '100%'
         });
-        $('#nav-content .fa-times-circle, #nav-content').delay(700).fadeIn('slow');
+        $('#nav-content .fa-times-circle, #nav-content').fadeIn('slow');
     });
     $('#nav-content .fa-times-circle').click(function () {
         $('#nav-content .fa-times-circle, #nav-content').
@@ -22,18 +22,19 @@ $(document).ready(function () {
     });
 });
 
-/* --- Lottie ---
+/*--- Lottie ---*/
 
 //Showcase
+var lottieShowCase = document.getElementById('lottieShowCase');
 lottie.loadAnimation({
     container: element, // the dom element that will contain the animation
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'data.json'
+    path: 'lottie/showcase.json'
 });
 
-//Process
+/*Process
 lottie.loadAnimation({
     container: element, // the dom element that will contain the animation
     renderer: 'svg',

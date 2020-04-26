@@ -29,7 +29,7 @@ h2 {
 header {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 3%;
   z-index: 9; }
 
 #logo {
@@ -47,6 +47,10 @@ header {
   vertical-align: top;
   line-height: 40px; }
 
+@media (max-width: 1000px) {
+  header {
+    left: 10%; } }
+
 /*--- navigation ---*/
 nav {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
@@ -57,7 +61,7 @@ nav {
   top: 0;
   right: 0;
   z-index: 10;
-  transition: width 2s, height 2s, clip-path 2s; }
+  transition: width 1s, height 1s, clip-path 1s; }
 
 nav i,
 #nav-content i {
@@ -85,84 +89,97 @@ nav .fa-times-circle {
   right: 20px;
   font-size: 40px; }
 
-/*--- triangle sections ---*/
-.triangle-left {
+/*--- tri sections ---*/
+.tri-left {
   position: absolute;
   z-index: 3;
   width: 60%;
   display: inline;
   float: left; }
 
-.background-image-div {
-  width: 100%;
-  height: 101vh;
+.tri-left .tri-content {
+  position: absolute;
+  width: 95%;
+  height: 100vh;
   background: #ff6e61;
   -webkit-clip-path: url(#hero-clip);
   clip-path: url(#hero-clip);
-  margin-top: -25px;
-  padding-left: 20px; }
+  padding-left: 5%; }
 
-.triangle-right-top {
+.tri-right-top {
   width: 50%;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 2; }
 
-.background-image-div-2 {
-  width: 100%;
+.tri-right-top .tri-content {
+  width: 80%;
   height: 55vh;
   background: #479dff;
   z-index: 2;
   -webkit-clip-path: url(#hero-clip-2);
-  clip-path: url(#hero-clip-2); }
+  clip-path: url(#hero-clip-2);
+  padding: 70px 0 0 20%;
+  text-align: center; }
 
-.triangle-right-bottom {
+.tri-right-bottom {
   width: 50%;
   height: 60%;
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: #3b72b3;
-  text-align: right;
-  padding-right: 10%; }
+  background: #3b72b3; }
 
-.triangle-right-bottom div {
-  margin-top: 20%;
-  margin-right: 20%; }
+.tri-right-bottom .tri-content {
+  margin-top: 35%;
+  width: 80%;
+  padding-left: 20%;
+  text-align: center; }
 
-#header {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg); }
-
-#portfolio {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg); }
-
-#process {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg); }
+@media (max-width: 1000px) {
+  .tri-left {
+    background-color: #479dff; }
+  .tri-right-top {
+    background-color: #3b72b3; }
+  .tri-left,
+  .tri-right-top,
+  .tri-right-bottom {
+    width: 100%;
+    position: relative;
+    clear: both; }
+  .tri-left {
+    height: inherit; }
+  .tri-right-bottom .tri-content {
+    margin-top: 0; }
+  .tri-left .tri-content,
+  .tri-right-top .tri-content,
+  .tri-right-bottom .tri-content {
+    -webkit-clip-path: url(#mobile-clip);
+    clip-path: url(#mobile-clip);
+    margin-left: 0;
+    width: 80%;
+    padding: 0 10%; } }
 
 /*--- home ---*/
 #currentJob {
   height: 22px;
   width: auto; }
 
+#brand-logos {
+  width: 80%; }
+
 #brand-logos img {
-  width: 100px;
+  width: 75px;
   height: auto;
   display: inline; }
 
-#brand-logos img:nth-child(3) {
-  clear: right; }
+@media (max-width: 1000px) {
+  #brand-logos {
+    width: 100%; } }
 
 /*--- buttons ---*/
 .btn {
   border: 3px solid #fff;
   border-radius: 4px; }
-
-/*--- breakpoints ---*/
