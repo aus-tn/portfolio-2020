@@ -7,6 +7,11 @@
             <a href="#" id="btn-showcase"><i class="fas fa-layer-group"></i>Showcase</a>
             <a href="https://www.linkedin.com/in/austinnorris" target="_blank"><i
                     class="fab fa-linkedin"></i>LinkedIn</a>
+            <a href="https://gitlab.com/aus.tn/austinnorris.website" target="_blank"><i
+                    class="fab fa-gitlab"></i>GitLab</a>
+            <a href="https://codepen.io/AustinNorris" target="_blank"><i class="fab fa-codepen"></i>CodePen</a>
+            <a href="mailto:me@austinnorris.website"><i class="fas fa-paper-plane"></i>Email me</a>
+            <a href="src/assets/austin-norris-resume.pdf" target="_blank"><i class="fas fa-file"></i>Résumé</a>
         </div>
     </div>
 </nav>

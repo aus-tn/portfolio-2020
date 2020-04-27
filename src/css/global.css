@@ -89,9 +89,6 @@ nav .fa-times {
   left: 20px;
   width: 100%; }
 
-#nav-links a i {
-  padding-right: 20px; }
-
 #nav-links a {
   font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
@@ -100,6 +97,15 @@ nav .fa-times {
   display: block;
   text-transform: uppercase;
   padding-bottom: 30px; }
+
+#nav-links a:nth-child(3),
+#nav-links a:nth-child(6) {
+  margin-top: 20px; }
+
+#nav-links a i {
+  padding-right: 20px;
+  width: 30px;
+  text-align: center; }
 
 nav .fa-times {
   position: absolute;
@@ -273,6 +279,17 @@ nav .fa-times {
     padding-top: 10px;
     font-size: 18px; }
 
+.lp-col h2 img {
+  padding-right: 20px; }
+
+.lp-col p {
+  width: 300px;
+  margin: 20px auto 40px auto; }
+
 @media (max-width: 768px) {
   .lp-col {
-    width: 100%; } }
+    width: 100%; }
+  .lp-col:last-child {
+    padding-bottom: 100px; }
+  .lp-col h2 {
+    padding-top: 30px; } }

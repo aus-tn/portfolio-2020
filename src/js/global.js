@@ -59,7 +59,9 @@ $(document).ready(function () {
         $(btnId).css({
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
-            'height': '100%'
+            'height': '100%',
+            'display': 'block',
+            'overflow': 'auto'
         });
         //let animation complete before hiding
         setTimeout(function () { $(btnIdOpp).hide(); }, 1000);

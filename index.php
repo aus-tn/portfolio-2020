@@ -77,19 +77,21 @@
     <section id="tri-right-top-lp">
         <h1>Showcase</h1>
         <div class="lp-col">
-            <h2>Auto Ad Group</h2>
-            <img src="" alt="AAG" />
-            <p></p>
+            <h2><img src="img/AAG.png" alt="AMSI" />AMSI/AAG</h2>
+            <p>AMSI/AAG is the third largest privately held automotive management corporations in the USA with over 150
+                dealerships</p>
+            <a href="aag.php" class="btn" id="btn-process">VIEW</a>
         </div>
         <div class="lp-col">
-            <h2>Living Fresh</h2>
-            <img src="" alt="AAG" />
-            <p></p>
+            <h2><img src="img/LF.png" alt="Living Fresh" />Living Fresh</h2>
+            <p>Living Fresh is the e-commerce residential branch of Valley Forge Fabrics, an international sustainable
+                fabrics company who produces fabric products for hotels, government, military, and more.</p>
+            <a href="lf.php" class="btn" id="btn-process">VIEW</a>
         </div>
         <div class="lp-col">
-            <h2>Steeda Autosports</h2>
-            <img src="" alt="AAG" />
-            <p></p>
+            <h2><img src="img/Steeda.png" alt="Steeda" />Steeda</h2>
+            <p>Steeda is one of the largest Ford performance parts manufacturers in the world</p>
+            <a href="steeda.php" class="btn" id="btn-process">VIEW</a>
         </div>
     </section>
 
