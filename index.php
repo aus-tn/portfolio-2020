@@ -75,10 +75,22 @@
     </section>
 
     <section id="tri-right-top-lp">
-        <h2>Showcase</h2>
-        <div class="lp-col"></div>
-        <div class="lp-col"></div>
-        <div class="lp-col"></div>
+        <h1>Showcase</h1>
+        <div class="lp-col">
+            <h2>Auto Ad Group</h2>
+            <img src="" alt="AAG" />
+            <p></p>
+        </div>
+        <div class="lp-col">
+            <h2>Living Fresh</h2>
+            <img src="" alt="AAG" />
+            <p></p>
+        </div>
+        <div class="lp-col">
+            <h2>Steeda Autosports</h2>
+            <img src="" alt="AAG" />
+            <p></p>
+        </div>
     </section>
 
     <!--- Process --->
@@ -94,34 +106,34 @@
     <section id="tri-right-bottom-lp">
         <h1>Process</h1>
         <div class="lp-col">
-            <h2>Research</h2>
+            <h2><i class="far fa-object-group"></i>Research</h2>
             <ul>
                 <li>SWOT Analysis</li>
                 <li>User &amp; Company Goals</li>
                 <li>Google Analytics Analysis</li>
                 <li>User Profiles</li>
                 <li>Information Architecture</li>
-                <li>Sketching \ Wireframing</li>
-                <li>Graphics (Adobe Photoshop &amp; Illustrator)</li>
+                <li>Sketching, Wireframing</li>
             </ul>
         </div>
         <div class="lp-col">
-            <h2>Build</h2>
+            <h2><i class="fas fa-code"></i>Build</h2>
             <ul>
-                <li>Prototyping (Adobe XD)</li>
+                <li>Adobe Photoshop, Illustrator</li>
+                <li>Prototyping, Adobe XD</li>
                 <li>HTML, CSS, SASS</li>
-                <li>Javascript, jQuery, AJAX, Gulp</li>
+                <li>JS, jQuery, AJAX, Gulp</li>
                 <li>Bootstrap, Foundation</li>
                 <li>Git, GitLab, GitHub</li>
                 <li>PHP, Twig, REST API</li>
-                <li>Craft CMS, Shopify, WordPress</li>
+                <li>Craft, Shopify, WordPress</li>
             </ul>
         </div>
         <div class="lp-col">
-            <h2>Test</h2>
+            <h2><i class="fas fa-vial"></i>Test</h2>
             <ul>
                 <li>User Testing</li>
-                <li>Google Analytics ROI & KPI Metrics</li>
+                <li>Google Analytics ROI & KPI</li>
                 <li>A/B Testing</li>
             </ul>
         </div>

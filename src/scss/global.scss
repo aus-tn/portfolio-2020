@@ -125,6 +125,10 @@ nav .fa-times {
 	width: 100%;
 }
 
+#nav-links a i {
+	padding-right: 20px;
+}
+
 #nav-links a {
 	font-family: $font-body;
 	text-decoration: none;
@@ -140,13 +144,6 @@ nav .fa-times {
 	top: 20px;
 	right: 20px;
 	font-size: 40px;
-}
-
-#nav-actual {
-	ul {
-		li {
-		}
-	}
 }
 
 /*--- tri sections ---*/
@@ -199,21 +196,15 @@ nav .fa-times {
 }
 
 .tri-right-bottom .tri-content {
-	margin-top: 35%;
+	margin-top: 25%;
 	width: 80%;
 	padding-left: 20%;
 	text-align: center;
 }
 
-@media (min-width: 1500px) {
-	.tri-right-bottom .tri-content {
-		margin-top: 25%;
-	}
-}
-
 @media (max-width: 1300px) {
 	.tri-right-bottom .tri-content {
-		margin-top: 40%;
+		margin-top: 35%;
 	}
 }
 
@@ -355,20 +346,22 @@ nav .fa-times {
 	float: left;
 }
 
+.lp-col h2 i {
+	padding-right: 20px;
+}
+
 .lp-col ul {
 	text-align: left;
-	width: 200px;
+	width: 210px;
 	margin: 0 auto;
 	li {
 		padding-top: 10px;
+		font-size: 18px;
 	}
 }
 
 @media (max-width: 768px) {
 	.lp-col {
 		width: 100%;
-	}
-	.lp-col ul {
-		width: 300px;
 	}
 }

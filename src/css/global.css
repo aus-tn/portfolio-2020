@@ -89,6 +89,9 @@ nav .fa-times {
   left: 20px;
   width: 100%; }
 
+#nav-links a i {
+  padding-right: 20px; }
+
 #nav-links a {
   font-family: "Roboto Condensed", sans-serif;
   text-decoration: none;
@@ -148,18 +151,14 @@ nav .fa-times {
   background: #3b72b3; }
 
 .tri-right-bottom .tri-content {
-  margin-top: 35%;
+  margin-top: 25%;
   width: 80%;
   padding-left: 20%;
   text-align: center; }
 
-@media (min-width: 1500px) {
-  .tri-right-bottom .tri-content {
-    margin-top: 25%; } }
-
 @media (max-width: 1300px) {
   .tri-right-bottom .tri-content {
-    margin-top: 40%; } }
+    margin-top: 35%; } }
 
 @media (max-width: 1000px) {
   .tri-left, .tri-right-top, .tri-right-bottom {
@@ -263,15 +262,17 @@ nav .fa-times {
   display: inline;
   float: left; }
 
+.lp-col h2 i {
+  padding-right: 20px; }
+
 .lp-col ul {
   text-align: left;
-  width: 200px;
+  width: 210px;
   margin: 0 auto; }
   .lp-col ul li {
-    padding-top: 10px; }
+    padding-top: 10px;
+    font-size: 18px; }
 
 @media (max-width: 768px) {
   .lp-col {
-    width: 100%; }
-  .lp-col ul {
-    width: 300px; } }
+    width: 100%; } }

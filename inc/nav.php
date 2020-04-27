@@ -3,10 +3,10 @@
     <div id="nav-content">
         <i class="fas fa-times"></i>
         <div id="nav-links">
-            <i class="fas fa-list-ol"></i><a href="#" id="btn-process">Process</a>
-            <i class="fas fa-layer-group"></i><a href="#" id="btn-showcase">Showcase</a>
-            <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/austinnorris"
-                target="_blank">LinkedIn</a>
+            <a href="#" id="btn-process"><i class="fas fa-list-ol"></i>Process</a>
+            <a href="#" id="btn-showcase"><i class="fas fa-layer-group"></i>Showcase</a>
+            <a href="https://www.linkedin.com/in/austinnorris" target="_blank"><i
+                    class="fab fa-linkedin"></i>LinkedIn</a>
         </div>
     </div>
 </nav>
