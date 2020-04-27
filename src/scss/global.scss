@@ -117,12 +117,24 @@ nav .fa-bars {
 nav .fa-times {
 	display: none;
 }
+
 #nav-links {
 	position: absolute;
 	top: 20px;
 	left: 20px;
 	width: 100%;
 }
+
+#nav-links a {
+	font-family: $font-body;
+	text-decoration: none;
+	color: $gray;
+	font-size: 30px;
+	display: block;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
 nav .fa-times {
 	position: absolute;
 	top: 20px;
@@ -193,6 +205,18 @@ nav .fa-times {
 	text-align: center;
 }
 
+@media (min-width: 1500px) {
+	.tri-right-bottom .tri-content {
+		margin-top: 25%;
+	}
+}
+
+@media (max-width: 1300px) {
+	.tri-right-bottom .tri-content {
+		margin-top: 40%;
+	}
+}
+
 @media (max-width: 1000px) {
 	%tri-mobile {
 		width: 100%;
@@ -243,6 +267,21 @@ nav .fa-times {
 	margin-top: 60px;
 }
 
+.tri-right-top h2 {
+	margin-bottom: 0;
+}
+
+#lottieProcess {
+	width: auto;
+	height: 100px;
+	margin: 45px 0 55px 0;
+}
+
+#lottieShowCase {
+	width: auto;
+	height: 200px;
+}
+
 #brand-logos {
 	width: 80%;
 	margin-left: -15px;
@@ -285,19 +324,51 @@ nav .fa-times {
 /*-- internal sections--*/
 
 %tri-lp {
-	display: none; //changes to absolute
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
 	right: 0;
-	width: 1px; //change to 100%
-	height: 1px; //change to 100%
+	z-index: 3;
+	font-family: $font-body;
+	text-align: center;
+	transition: width 1s, height 1s, clip-path 1s;
 }
 
 #tri-right-bottom-lp {
-	clip-path: polygon(46% 52%, 100% 0, 100% 100%, 0 100%);
+	@extend %tri-lp;
+	clip-path: (polygon(50% 50%, 100% 0, 100% 100%, 0 100%));
 	bottom: 0;
+	background-color: $blue-dark;
 }
 
 #tri-right-top-lp {
+	@extend %tri-lp;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 51%);
 	top: 0;
+	background-color: $blue-light;
 }
-//transform to clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+.lp-col {
+	width: 33%;
+	display: inline;
+	float: left;
+}
+
+.lp-col ul {
+	text-align: left;
+	width: 200px;
+	margin: 0 auto;
+	li {
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.lp-col {
+		width: 100%;
+	}
+	.lp-col ul {
+		width: 300px;
+	}
+}

@@ -89,6 +89,15 @@ nav .fa-times {
   left: 20px;
   width: 100%; }
 
+#nav-links a {
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  color: #333;
+  font-size: 30px;
+  display: block;
+  text-transform: uppercase;
+  padding-bottom: 30px; }
+
 nav .fa-times {
   position: absolute;
   top: 20px;
@@ -144,6 +153,14 @@ nav .fa-times {
   padding-left: 20%;
   text-align: center; }
 
+@media (min-width: 1500px) {
+  .tri-right-bottom .tri-content {
+    margin-top: 25%; } }
+
+@media (max-width: 1300px) {
+  .tri-right-bottom .tri-content {
+    margin-top: 40%; } }
+
 @media (max-width: 1000px) {
   .tri-left, .tri-right-top, .tri-right-bottom {
     width: 100%;
@@ -178,6 +195,18 @@ nav .fa-times {
 .tri-left .tri-content h3 {
   margin-top: 60px; }
 
+.tri-right-top h2 {
+  margin-bottom: 0; }
+
+#lottieProcess {
+  width: auto;
+  height: 100px;
+  margin: 45px 0 55px 0; }
+
+#lottieShowCase {
+  width: auto;
+  height: 200px; }
+
 #brand-logos {
   width: 80%;
   margin-left: -15px; }
@@ -208,10 +237,41 @@ nav .fa-times {
   background-color: transparent; }
 
 /*-- internal sections--*/
+#tri-right-bottom-lp, #tri-right-top-lp {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  right: 0;
+  z-index: 3;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  transition: width 1s, height 1s, clip-path 1s; }
+
 #tri-right-bottom-lp {
-  clip-path: polygon(46% 52%, 100% 0, 100% 100%, 0 100%);
-  bottom: 0; }
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
+  bottom: 0;
+  background-color: #3b72b3; }
 
 #tri-right-top-lp {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 51%);
-  top: 0; }
+  top: 0;
+  background-color: #479dff; }
+
+.lp-col {
+  width: 33%;
+  display: inline;
+  float: left; }
+
+.lp-col ul {
+  text-align: left;
+  width: 200px;
+  margin: 0 auto; }
+  .lp-col ul li {
+    padding-top: 10px; }
+
+@media (max-width: 768px) {
+  .lp-col {
+    width: 100%; }
+  .lp-col ul {
+    width: 300px; } }

@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-    /*--- header ---*/
-
-    /*$().click(function () {
-
-    });*/
-
     /*--- nav ---*/
 
     $('nav i').click(function () {
@@ -18,7 +12,7 @@ $(document).ready(function () {
         $('#nav-content .fa-times, #nav-content').fadeIn('slow');
     });
 
-    $('#nav-content .fa-times').click(function () {
+    $('#nav-content .fa-times, #nav-links a').click(function () {
         $('#nav-content .fa-times, #nav-content').
             fadeOut('fast', function () {
                 $('nav').css({
@@ -38,7 +32,7 @@ $(document).ready(function () {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'lottie/showcase.json'
+        path: './js/lottie/showcase.json'
     });
 
     //Process
@@ -47,29 +41,28 @@ $(document).ready(function () {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'lottie/process.json'
+        path: './js/lottie/process.json'
     });
 
     /*--- internal sections ---*/
 
     $('#btn-showcase, #btn-process').click(function () {
         var btnId = $(this).attr('id');
-        console.log('id: '.btnId);
-        var btnClass = '';
-        console.log('class: '.btnClass);
         if (btnId == 'btn-showcase') {
-            btnClass = '.tri-right-top-lp';
+            var btnId = '#tri-right-top-lp';
+            var btnIdOpp = '.tri-left, .tri-right-bottom';
         }
         else {
-            btnClass = '.tri-right-bottom-lp';
+            var btnId = '#tri-right-bottom-lp';
+            var btnIdOpp = '.tri-left, .tri-right-top';
         }
-        $(btnClass).css({
-            'display': 'block',
+        $(btnId).css({
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
-            'height': '100%',
-            'z-index': '3'
+            'height': '100%'
         });
+        //let animation complete before hiding
+        setTimeout(function () { $(btnIdOpp).hide(); }, 1000);
     });
 
 });

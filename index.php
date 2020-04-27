@@ -14,7 +14,7 @@
         <div class="tri-content">
             <h1>UX/UI Designer</h1>
             <h2>Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
-            <h3>other known brand worked with</h3>
+            <h3>other major brands worked with</h3>
             <div id="brand-logos">
                 <img src="img/bmw.png" alt="BMW" />
                 <img src="img/best-western.png" alt="Best Western" />
@@ -55,9 +55,9 @@
 
     <section class="tri-right-top">
         <div class="tri-content">
-            <div id="lottieShowCase"></div>
             <h2>Showcase</h2>
-            <a href="showcase.php" class="btn" id="btn-showcase">VIEW</a>
+            <div id="lottieShowCase"></div>
+            <a href="#" class="btn" id="btn-showcase">VIEW</a>
         </div>
         <svg height="0" width="0" class="svg-clip">
             <defs>
@@ -76,7 +76,6 @@
 
     <section id="tri-right-top-lp">
         <h2>Showcase</h2>
-        <div id="lottieShowCase"></div>
         <div class="lp-col"></div>
         <div class="lp-col"></div>
         <div class="lp-col"></div>
@@ -86,15 +85,14 @@
 
     <section class="tri-right-bottom">
         <div class="tri-content">
-            <div class="lottieProcess"></div>
             <h2>Process</h2>
-            <a href="process.php" class="btn" id="btn-process">VIEW</a>
+            <div id="lottieProcess"></div>
+            <a href="#" class="btn" id="btn-process">VIEW</a>
         </div>
     </section>
 
     <section id="tri-right-bottom-lp">
         <h1>Process</h1>
-        <div class="lottieProcess"></div>
         <div class="lp-col">
             <h2>Research</h2>
             <ul>
