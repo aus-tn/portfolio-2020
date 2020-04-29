@@ -40,7 +40,7 @@
         <svg height="0" width="0" class="svg-clip">
             <defs>
                 <clipPath id="hero-clip" clipPathUnits="objectBoundingBox">
-                    <polygon fill="none" points="0,0 .9,0 1,1 0,1" />
+                    <polygon fill="none" points="0,0 1,0 .9,1 0,1" />
                 </clipPath>
             </defs>
             <defs>
@@ -78,19 +78,19 @@
         <h1>Showcase</h1>
         <div class="lp-col">
             <h2><img src="img/AAG.png" alt="AMSI" />AMSI/AAG</h2>
-            <p>AMSI/AAG is the third largest privately held automotive management corporations in the USA with over 150
+            <p>The third largest privately held automotive management corporation in the USA with over 150
                 dealerships</p>
             <a href="aag.php" class="btn" id="btn-process">VIEW</a>
         </div>
         <div class="lp-col">
             <h2><img src="img/LF.png" alt="Living Fresh" />Living Fresh</h2>
-            <p>Living Fresh is the e-commerce residential branch of Valley Forge Fabrics, an international sustainable
-                fabrics company who produces fabric products for hotels, government, military, and more.</p>
+            <p>The residential e-commerce branch of Valley Forge Fabrics, an international sustainable
+                fabrics company</p>
             <a href="lf.php" class="btn" id="btn-process">VIEW</a>
         </div>
         <div class="lp-col">
             <h2><img src="img/Steeda.png" alt="Steeda" />Steeda</h2>
-            <p>Steeda is one of the largest Ford performance parts manufacturers in the world</p>
+            <p>One of the largest Ford performance parts manufacturers in the world</p>
             <a href="steeda.php" class="btn" id="btn-process">VIEW</a>
         </div>
     </section>
