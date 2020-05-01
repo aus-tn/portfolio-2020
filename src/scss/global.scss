@@ -8,6 +8,7 @@ $font-header: "Manrope", sans-serif;
 $font-body: "Roboto Condensed", sans-serif;
 $orange: #ff6e61;
 $blue-light: #479dff;
+$blue-lighter: #6eb2ff;
 $blue-dark: #3b72b3;
 $gray: #333;
 $white: #fff;
@@ -15,6 +16,14 @@ $white: #fff;
 body {
 	font-family: $font-body;
 	color: $white;
+}
+
+.mt0 {
+	margin-top: 0;
+}
+
+.mb0 {
+	margin-bottom: 0 !important;
 }
 
 /*--- headers ---*/
@@ -150,9 +159,6 @@ nav .fa-times {
 		clip-path: url(#hero-clip);
 		padding-left: 5%;
 		align-items: normal;
-		h2 {
-			margin-top: 0;
-		}
 	}
 	svg {
 		display: block;
@@ -243,10 +249,6 @@ nav .fa-times {
 
 .tri-left .tri-content h3 {
 	margin-top: 60px;
-}
-
-.tri-right-top h2 {
-	margin-bottom: 0;
 }
 
 #lottieProcess {
@@ -360,5 +362,67 @@ nav .fa-times {
 	}
 	.lp-col:last-child {
 		padding-bottom: 100px;
+	}
+}
+
+/*--- showcase internals ---*/
+
+.sc-contain {
+	max-width: 1000px;
+	overflow: auto;
+	margin: 0 auto;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+%sc-row {
+	-webkit-clip-path: url(#mobile-clip);
+	clip-path: url(#mobile-clip);
+}
+
+.sc-row-contain:nth-child(odd) {
+	background: $blue-lighter;
+}
+
+.sc-row:nth-child(odd) {
+	@extend %sc-row;
+	background: $blue-light;
+}
+
+.sc-row-contain:nth-child(even) {
+	background: $blue-light;
+	.sc-row {
+		@extend %sc-row;
+		background: $blue-lighter;
+	}
+}
+
+%sc {
+	display: inline;
+	margin: 5%;
+	width: 40%;
+}
+
+.sc-left {
+	@extend %sc;
+	float: left;
+}
+
+.sc-right {
+	@extend %sc;
+	float: right;
+}
+
+@media (max-width: 1000px) {
+	%sc {
+		width: 80%;
+		margin: 10%;
+		float: none;
+		display: block;
+		p:last-child {
+			padding-bottom: 40px;
+		}
 	}
 }

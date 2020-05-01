@@ -13,7 +13,7 @@
     <section class="tri-left">
         <div class="tri-content">
             <h1>UX/UI Designer</h1>
-            <h2>Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
+            <h2 class="mt0">Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
             <h3>other major brands worked with</h3>
             <div id="brand-logos">
                 <img src="img/bmw.png" alt="BMW" />
@@ -55,7 +55,7 @@
 
     <section class="tri-right-top">
         <div class="tri-content">
-            <h2>Showcase</h2>
+            <h2 class="mb0">Showcase</h2>
             <div id="lottieShowCase"></div>
             <a href="#" class="btn" id="btn-showcase">VIEW</a>
         </div>
@@ -74,72 +74,20 @@
         </div>
     </section>
 
-    <section id="tri-right-top-lp">
-        <h1>Showcase</h1>
-        <div class="lp-col">
-            <h2><img src="img/AAG.png" alt="AMSI" />AMSI/AAG</h2>
-            <p>The third largest privately held automotive management corporation in the USA with over 150
-                dealerships</p>
-            <a href="aag.php" class="btn" id="btn-process">VIEW</a>
-        </div>
-        <div class="lp-col">
-            <h2><img src="img/LF.png" alt="Living Fresh" />Living Fresh</h2>
-            <p>The residential e-commerce branch of Valley Forge Fabrics, an international sustainable
-                fabrics company</p>
-            <a href="lf.php" class="btn" id="btn-process">VIEW</a>
-        </div>
-        <div class="lp-col">
-            <h2><img src="img/Steeda.png" alt="Steeda" />Steeda</h2>
-            <p>One of the largest Ford performance parts manufacturers in the world</p>
-            <a href="steeda.php" class="btn" id="btn-process">VIEW</a>
-        </div>
-    </section>
+    <?php include 'inc/showcase.php';?>
 
     <!--- Process --->
 
     <section class="tri-right-bottom">
         <div class="tri-content">
-            <h2>Process</h2>
+            <h2 class="mb0">Process</h2>
             <div id="lottieProcess"></div>
             <a href="#" class="btn" id="btn-process">VIEW</a>
         </div>
     </section>
 
-    <section id="tri-right-bottom-lp">
-        <h1>Process</h1>
-        <div class="lp-col">
-            <h2><i class="far fa-object-group"></i>Research</h2>
-            <ul>
-                <li>SWOT Analysis</li>
-                <li>User &amp; Company Goals</li>
-                <li>Google Analytics Analysis</li>
-                <li>User Profiles</li>
-                <li>Information Architecture</li>
-                <li>Sketching, Wireframing</li>
-            </ul>
-        </div>
-        <div class="lp-col">
-            <h2><i class="fas fa-code"></i>Build</h2>
-            <ul>
-                <li>Adobe Photoshop, Illustrator</li>
-                <li>Prototyping, Adobe XD</li>
-                <li>HTML, CSS, SASS</li>
-                <li>JS, jQuery, AJAX, Gulp</li>
-                <li>Bootstrap, Foundation</li>
-                <li>Git, GitLab, GitHub</li>
-                <li>PHP, Twig, REST API</li>
-                <li>Craft, Shopify, WordPress</li>
-            </ul>
-        </div>
-        <div class="lp-col">
-            <h2><i class="fas fa-vial"></i>Test</h2>
-            <ul>
-                <li>User Testing</li>
-                <li>Google Analytics ROI & KPI</li>
-                <li>A/B Testing</li>
-            </ul>
-        </div>
-    </section>
+    <?php include 'inc/process.php';?>
+
 </body>
 
 </html>
