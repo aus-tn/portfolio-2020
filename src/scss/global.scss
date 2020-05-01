@@ -346,6 +346,12 @@ nav .fa-times {
 	}
 	h2 img {
 		padding-right: 20px;
+		height: auto;
+		width: auto;
+	}
+	img {
+		width: 80%;
+		height: auto;
 	}
 	p {
 		width: 300px;
@@ -356,6 +362,7 @@ nav .fa-times {
 @media (max-width: 900px) {
 	.lp-col {
 		width: 100%;
+		margin-bottom: 30px;
 		h2 {
 			padding-top: 30px;
 		}

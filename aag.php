@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="sc-contain">
-                <div class="sc-right"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-right"><img src="img/AAG-1.png" alt="AMSI" /></div>
                 <div class="sc-left">
                     <p class="mt0">AAG is one of the largest privately held dealership management corporations in the
                         USA. I
@@ -58,7 +58,7 @@
     <section class="sc-row-contain">
         <div class="sc-row">
             <div class="sc-contain">
-                <div class="sc-left"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-left"><img src="img/AAG-2.png" alt="AMSI" /></div>
                 <div class="sc-right">
                     <p class="mt0">Sometimes they would want to use an existing template, or one from another sister
                         dealership, and
@@ -93,7 +93,7 @@
     <section class="sc-row-contain">
         <div class="sc-row">
             <div class="sc-contain">
-                <div class="sc-right"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-right"><img src="img/AAG-3.png" alt="AMSI" /></div>
                 <div class="sc-left">
                     <p class="mt0">As a solution I designed and pitched Phalanx. I worked with the SEO, email, ad, AV,
                         media buyer,

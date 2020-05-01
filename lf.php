@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="sc-contain">
-                <div class="sc-right"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-right"><img src="img/LFC-1.png" alt="LFC" /></div>
                 <div class="sc-left">
                     <p class="mt0">Living fresh is the residential e-commerce branch of Valley Forge Fabrics, an
                         international sustainable fabrics company
@@ -42,7 +42,7 @@
     <section class="sc-row-contain">
         <div class="sc-row">
             <div class="sc-contain">
-                <div class="sc-left"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-left"><img src="img/LFC-2.png" alt="LFC" /></div>
                 <div class="sc-right">
                     <p class="mt0">Our challenge was being sure our target audience was correctly defined (mostly middle
                         class and above women or people with allergies to traditional bedding). Leveraging user
@@ -63,7 +63,7 @@
     <section class="sc-row-contain">
         <div class="sc-row">
             <div class="sc-contain">
-                <div class="sc-right"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-right"><img src="img/LFC-3.png" alt="LFC" /></div>
                 <div class="sc-left">
                     <p class="mt0">
                         I designed and built the new site upon Shopify. I also worked with our graphic designer and

@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="sc-contain">
-                <div class="sc-right"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-right"><img src="img/Steeda-1.png" alt="Steeda" /></div>
                 <div class="sc-left">
                     <p class="mt0">
                         Steeda is one of the largest Ford performance parts manufacturers in the world. They needed to
@@ -40,7 +40,7 @@
     <section class="sc-row-contain">
         <div class="sc-row">
             <div class="sc-contain">
-                <div class="sc-left"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-left"><img src="img/Steeda-2.png" alt="Steeda" /></div>
                 <div class="sc-right">
                     <p class="mt0">I redesigned and rebuilt their four major e-commerce sites. One for Ford Mustang
                         parts, the other three for Focus, Fiesta, and Fusion. We kept the logo and I utilized their blue
@@ -66,7 +66,7 @@
     <section class="sc-row-contain">
         <div class="sc-row">
             <div class="sc-contain">
-                <div class="sc-right"><img src="https://picsum.photos/id/237/1000/500" alt="" /></div>
+                <div class="sc-right"><img src="img/Steeda-3.png" alt="Steeda" /></div>
                 <div class="sc-left">
                     <p class="mt0">Imagery was pulled from their events (to promote our most loyal community members)
                         and existing product images. I also requested they used a light box and had one of our
