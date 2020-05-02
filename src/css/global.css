@@ -11,6 +11,9 @@ body {
 .mb0 {
   margin-bottom: 0 !important; }
 
+.pl5 {
+  padding-left: 5%; }
+
 /*--- headers ---*/
 h1, h2, h3 {
   font-family: "Manrope", sans-serif;
@@ -51,10 +54,11 @@ header {
 
 @media (max-width: 1000px) {
   header {
-    left: 10%; } }
+    left: 5%; } }
 
 /*--- navigation ---*/
 nav {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
   width: 80px;
   height: 100px;
@@ -63,7 +67,7 @@ nav {
   top: 0;
   right: 0;
   z-index: 10;
-  transition: width 1s, height 1s, clip-path 1s; }
+  transition: width 1s, height 1s, clip-path 1s, -webkit-clip-path 1s; }
 
 nav i,
 #nav-content i {
@@ -106,17 +110,21 @@ nav .fa-times {
   right: 20px;
   font-size: 40px; }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  nav {
+    height: 60px;
+    width: 60px; } }
+
 /*--- tri sections ---*/
 .tri-left {
   position: absolute;
   z-index: 3;
-  width: 53%; }
+  width: 56%; }
   .tri-left .tri-content {
     height: 100vh;
     background: #ff6e61;
     -webkit-clip-path: url(#hero-clip);
     clip-path: url(#hero-clip);
-    padding-left: 5%;
     align-items: normal; }
   .tri-left svg {
     display: block; }
@@ -165,8 +173,7 @@ nav .fa-times {
   .tri-left .tri-content,
   .tri-right-top .tri-content, .tri-right-bottom .tri-content {
     margin-left: 0;
-    width: 80%;
-    padding: 0 10%; }
+    width: 100%; }
   .tri-left .tri-content,
   .tri-right-top .tri-content {
     -webkit-clip-path: url(#mobile-clip);
@@ -231,14 +238,16 @@ nav .fa-times {
   z-index: 3;
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
-  transition: width 1s, height 1s, clip-path 1s; }
+  transition: width 1s, height 1s, clip-path 1s, -webkit-clip-path 1s; }
 
 #tri-right-bottom-lp {
+  -webkit-clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
   bottom: 0;
   background-color: #3b72b3; }
 
 #tri-right-top-lp {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 51%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 51%);
   top: 0;
   background-color: #479dff; }
@@ -319,3 +328,36 @@ nav .fa-times {
     display: block; }
     .sc-left p:last-child, .sc-right p:last-child {
       padding-bottom: 40px; } }
+
+/*--- MS browsers ---*/
+#ie-bar {
+  display: none; }
+
+#edge-bar {
+  display: none;
+  position: relative;
+  width: 100%;
+  background: #333;
+  padding: 10px;
+  text-align: center;
+  z-index: 9; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #ie-bar {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    padding: 100px 20px;
+    text-align: center; }
+    #ie-bar a,
+    #ie-bar a:hover,
+    #ie-bar a:active,
+    #ie-bar a:visited {
+      color: #fff; }
+  .tri-left,
+  .tri-right-top,
+  .tri-right-bottom,
+  nav,
+  header {
+    display: none; } }

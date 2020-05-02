@@ -11,6 +11,7 @@ $(document).ready(function () {
     $('nav i').click(function () {
         $('nav .fa-bars').hide();
         $('nav').css({
+            '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
             'height': '100%'
@@ -21,11 +22,20 @@ $(document).ready(function () {
     $('#nav-content .fa-times, #nav-links a').click(function () {
         $('#nav-content .fa-times, #nav-content').
             fadeOut('fast', function () {
-                $('nav').css({
-                    'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 50% 50%)',
-                    'width': '80px',
-                    'height': '100px'
-                });
+                if (navigator.appVersion.indexOf("Edge") != -1) {
+                    $('nav').css({
+                        'height': '60px',
+                        'width': '60px'
+                    });
+                }
+                else {
+                    $('nav').css({
+                        '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 50% 50%)',
+                        'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 50% 50%)',
+                        'width': '80px',
+                        'height': '100px'
+                    });
+                }
                 $('nav .fa-bars').fadeIn('fast');
             });
     });
@@ -63,6 +73,7 @@ $(document).ready(function () {
             var btnIdOpp = '#tri-right-top-lp';
         }
         $(btnId).css({
+            '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
             'height': '100%',
@@ -91,6 +102,29 @@ $(document).ready(function () {
                 $('header').fadeIn();
             }
         });
+    }
+
+    //Edge - clip-path not yet supported
+    if (navigator.appVersion.indexOf("Edge") != -1) {
+        $('header').css({
+            'top': '60px'
+        });
+        $('nav').css({
+            'border': '1px solid white',
+            'border-bottom-left-radius': '10px',
+            'height': '60px',
+            'width': '60px'
+        });
+        $('.tri-left .tri-content').css({
+            'height': '95vh'
+        });
+        $('.tri-content h2').css({
+            'margin-top': '15%'
+        });
+        $('.tri-right-bottom, .tri-right-top').css({
+            'width': '45%'
+        });
+        $('#edge-bar').show();
     }
 
 });

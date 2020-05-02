@@ -12,29 +12,31 @@
 
     <section class="tri-left">
         <div class="tri-content">
-            <h1>UX/UI Designer</h1>
-            <h2 class="mt0">Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
-            <h3>other major brands worked with</h3>
-            <div id="brand-logos">
-                <img src="img/bmw.png" alt="BMW" />
-                <img src="img/best-western.png" alt="Best Western" />
-                <img src="img/cadillac.png" alt="Cadillac">
-                <img src="img/crowne-plaza.png" alt="Crowne Plaza">
-                <img src="img/chrysler.png" alt="Chrysler">
-                <img src="img/comfort-suites.png" alt="Comfort Suites">
-                <img src="img/dodge.png" alt="Dodge">
-                <img src="img/holiday-inn.png" alt="Holiday Inn">
-                <img src="img/honda.png" alt="Honda">
-                <img src="img/hyundai.png" alt="Hyundai">
-                <img src="img/infiniti.png" alt="Infiniti">
-                <img src="img/jeep.png" alt="Jeep">
-                <img src="img/lexus.png" alt="Lexus">
-                <img src="img/mercedes.png" alt="Mercedes-benz">
-                <img src="img/mini.png" alt="Mini">
-                <img src="img/nissan.png" alt="Nissan">
-                <img src="img/porsche.png" alt="Porche">
-                <img src="img/sebring.png" alt="Sebring">
-                <img src="img/volvo.png" alt="Volvo">
+            <div class="pl5">
+                <h1>UX/UI Designer</h1>
+                <h2 class="mt0">Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
+                <h3>other major brands worked with</h3>
+                <div id="brand-logos">
+                    <img src="img/bmw.png" alt="BMW" />
+                    <img src="img/best-western.png" alt="Best Western" />
+                    <img src="img/cadillac.png" alt="Cadillac">
+                    <img src="img/crowne-plaza.png" alt="Crowne Plaza">
+                    <img src="img/chrysler.png" alt="Chrysler">
+                    <img src="img/comfort-suites.png" alt="Comfort Suites">
+                    <img src="img/dodge.png" alt="Dodge">
+                    <img src="img/holiday-inn.png" alt="Holiday Inn">
+                    <img src="img/honda.png" alt="Honda">
+                    <img src="img/hyundai.png" alt="Hyundai">
+                    <img src="img/infiniti.png" alt="Infiniti">
+                    <img src="img/jeep.png" alt="Jeep">
+                    <img src="img/lexus.png" alt="Lexus">
+                    <img src="img/mercedes.png" alt="Mercedes-benz">
+                    <img src="img/mini.png" alt="Mini">
+                    <img src="img/nissan.png" alt="Nissan">
+                    <img src="img/porsche.png" alt="Porche">
+                    <img src="img/sebring.png" alt="Sebring">
+                    <img src="img/volvo.png" alt="Volvo">
+                </div>
             </div>
         </div>
         <svg height="0" width="0" class="svg-clip">
