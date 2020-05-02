@@ -130,6 +130,12 @@ nav .fa-times {
   .tri-left svg {
     display: block; }
 
+_::-webkit-full-page-media,
+_:future,
+:root .tri-left .tri-content {
+  padding-bottom: 0 !important;
+  min-height: 100vh; }
+
 .tri-right-top, .tri-right-bottom {
   width: 50%;
   position: absolute;
@@ -340,35 +346,10 @@ nav .fa-times {
     .sc-left p:last-child, .sc-right p:last-child {
       padding-bottom: 40px; } }
 
-/*--- MS browsers ---*/
-#ie-bar {
-  display: none; }
-
-#edge-bar {
-  display: none;
-  position: relative;
-  width: 100%;
-  background: #333;
-  padding: 10px;
-  text-align: center;
-  z-index: 9; }
-
+/*--- IE ---*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  #ie-bar {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    background: #333;
-    padding: 100px 20px;
-    text-align: center; }
-    #ie-bar a,
-    #ie-bar a:hover,
-    #ie-bar a:active,
-    #ie-bar a:visited {
-      color: #fff; }
-  .tri-left,
-  .tri-right-top,
-  .tri-right-bottom,
-  nav,
-  header {
-    display: none; } }
+  .tri-left .tri-content .tri-pad {
+    width: 90%; }
+  nav {
+    border: 1px solid #fff;
+    border-bottom-left-radius: 10px; } }

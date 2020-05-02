@@ -124,7 +124,6 @@ $(document).ready(function () {
         $('.tri-right-bottom, .tri-right-top').css({
             'width': '45%'
         });
-        $('#edge-bar').show();
     }
 
 });
