@@ -58,7 +58,7 @@ h3 {
 header {
 	position: absolute;
 	top: 40px;
-	left: 1.5%;
+	left: 3%;
 	z-index: 9;
 }
 
@@ -147,6 +147,7 @@ nav .fa-times {
 	font-size: 40px;
 }
 
+//IE
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	nav {
 		height: 60px;
@@ -167,7 +168,7 @@ nav .fa-times {
 		clip-path: url(#hero-clip);
 		align-items: normal;
 		.tri-pad {
-			padding: 2.5%;
+			padding: 5%;
 		}
 	}
 	h1 {
@@ -177,6 +178,11 @@ nav .fa-times {
 		display: block;
 	}
 }
+@media (max-width: 1000px) {
+	.tri-pad {
+		padding: 2.5% !important;
+	}
+}
 
 //safari height control on small windows
 _::-webkit-full-page-media,
@@ -184,6 +190,11 @@ _:future,
 :root .tri-left .tri-content {
 	padding-bottom: 0 !important;
 	min-height: 100vh;
+}
+_::-webkit-full-page-media,
+_:future,
+:root #brand-logos img {
+	width: 65px;
 }
 
 %tri-right {
@@ -476,6 +487,7 @@ _:future,
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 	.tri-left .tri-content .tri-pad {
 		width: 90%;
+		padding: 2.5%;
 	}
 	nav {
 		border: 1px solid $white;

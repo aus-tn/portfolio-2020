@@ -33,7 +33,7 @@ h3 {
 header {
   position: absolute;
   top: 40px;
-  left: 1.5%;
+  left: 3%;
   z-index: 9; }
 
 #logo {
@@ -124,17 +124,26 @@ nav .fa-times {
     clip-path: url(#hero-clip);
     align-items: normal; }
     .tri-left .tri-content .tri-pad {
-      padding: 2.5%; }
+      padding: 5%; }
   .tri-left h1 {
     margin-bottom: 0; }
   .tri-left svg {
     display: block; }
+
+@media (max-width: 1000px) {
+  .tri-pad {
+    padding: 2.5% !important; } }
 
 _::-webkit-full-page-media,
 _:future,
 :root .tri-left .tri-content {
   padding-bottom: 0 !important;
   min-height: 100vh; }
+
+_::-webkit-full-page-media,
+_:future,
+:root #brand-logos img {
+  width: 65px; }
 
 .tri-right-top, .tri-right-bottom {
   width: 50%;
@@ -349,7 +358,8 @@ _:future,
 /*--- IE ---*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .tri-left .tri-content .tri-pad {
-    width: 90%; }
+    width: 90%;
+    padding: 2.5%; }
   nav {
     border: 1px solid #fff;
     border-bottom-left-radius: 10px; } }

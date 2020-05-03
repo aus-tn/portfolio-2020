@@ -14,8 +14,10 @@ $(document).ready(function () {
             '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
-            'height': '100%'
+            'height': window.innerHeight
         });
+        //compensate for 100%/vh not working on chrome mobile
+        $('body').css({ 'background': '#fff' });
         $('#nav-content .fa-times, #nav-content').fadeIn('slow');
     });
 
@@ -66,22 +68,26 @@ $(document).ready(function () {
         var btnId = $(this).attr('id');
         if (btnId == 'btn-showcase') {
             var btnId = '#tri-right-top-lp';
+            var bodyBG = '#479dff';
             var btnIdOpp = '#tri-right-bottom-lp';
         }
         else {
             var btnId = '#tri-right-bottom-lp';
+            var bodyBG = '#3b72b3';
             var btnIdOpp = '#tri-right-top-lp';
         }
         $(btnId).css({
             '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
-            'height': '100%',
+            'height': window.innerHeight,
             'display': 'block',
             'overflow': 'auto',
             'z-index': '4'
         });
         $(btnIdOpp).css({ 'z-index': '1' });
+        //compensate for 100%/vh not working on chrome mobile
+        $('body').css({ 'background': bodyBG });
         //let animation complete before hiding on mobile for height control
         setTimeout(function () {
             $(btnIdOpp).hide();
@@ -104,7 +110,7 @@ $(document).ready(function () {
         });
     }
 
-    //Edge - clip-path not yet supported
+    // Non-'True' Edge - clip-path not yet supported
     if (navigator.appVersion.indexOf("Edge") != -1) {
         $('header').css({
             'top': '60px'
