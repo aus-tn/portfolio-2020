@@ -312,10 +312,6 @@ _:future,
   .lp-col:last-child {
     padding-bottom: 100px; } }
 
-@media (max-width: 760px) {
-  #tri-right-bottom-lp h1 {
-    padding-top: 150px; } }
-
 /*--- showcase internals ---*/
 .sc-contain {
   max-width: 1000px;

@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var widthOutput = '';
+    var widthOutput = window.innerWidth;
     function reportWindowSize() {
         widthOutput = window.innerWidth;
     }
@@ -81,6 +81,14 @@ $(document).ready(function () {
             var bodyBG = '#3b72b3';
             var btnIdOpp = '#tri-right-top-lp';
         }
+        if (widthOutput < 770) {
+            //Mobile lp sections both need top 0, dektop needs top/bottom difference for animation origin
+            var topSetMobileVal = '0';
+        }
+        else {
+            var topSetMobileVal = 'inherit';
+        }
+        console.log('width out: ' + widthOutput + 'top: ' + topSetMobileVal);
         $(btnId).css({
             '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
@@ -88,7 +96,8 @@ $(document).ready(function () {
             'height': '100vh',
             'display': 'block',
             'overflow': 'auto',
-            'z-index': '4'
+            'z-index': '4',
+            'top': topSetMobileVal
         });
         $(btnIdOpp).css({ 'z-index': '1' });
         //let animation complete before hiding on mobile for height control
