@@ -409,6 +409,10 @@ _:future,
 }
 
 @media (max-width: 900px) {
+	//compensate for height management
+	#tri-right-bottom-lp h1 {
+		padding-top: 200px;
+	}
 	.lp-col {
 		width: 100%;
 		margin-bottom: 30px;

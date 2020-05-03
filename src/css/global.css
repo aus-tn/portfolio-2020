@@ -303,6 +303,8 @@ _:future,
     margin: 20px auto 40px auto; }
 
 @media (max-width: 900px) {
+  #tri-right-bottom-lp h1 {
+    padding-top: 200px; }
   .lp-col {
     width: 100%;
     margin-bottom: 30px; }

@@ -14,7 +14,7 @@ $(document).ready(function () {
             '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
-            'height': window.innerHeight
+            'height': '100vh'
         });
         //compensate for 100%/vh not working on chrome mobile
         $('body').css({ 'background': '#fff' });
@@ -80,7 +80,7 @@ $(document).ready(function () {
             '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'width': '100%',
-            'height': window.innerHeight,
+            'height': '100vh',
             'display': 'block',
             'overflow': 'auto',
             'z-index': '4'
