@@ -16,9 +16,14 @@ $(document).ready(function () {
             'width': '100%',
             'height': '100vh'
         });
-        //compensate for 100%/vh not working on chrome mobile
-        $('body').css({ 'background': '#fff' });
         $('#nav-content .fa-times, #nav-content').fadeIn('slow');
+        //let animation complete before hiding on mobile for height control
+        setTimeout(function () {
+            if (widthOutput < 1000) {
+                $('body').css({ 'background': '#fff' });//compensate for 100%/vh not accurate on mobile
+            }
+        }, 1000);
+
     });
 
     $('#nav-content .fa-times, #nav-links a').click(function () {
@@ -86,12 +91,11 @@ $(document).ready(function () {
             'z-index': '4'
         });
         $(btnIdOpp).css({ 'z-index': '1' });
-        //compensate for 100%/vh not working on chrome mobile
-        $('body').css({ 'background': bodyBG });
         //let animation complete before hiding on mobile for height control
         setTimeout(function () {
             $(btnIdOpp).hide();
             if (widthOutput < 1000) {
+                $('body').css({ 'background': bodyBG });//compensate for 100%/vh not accurate on mobile
                 $('.tri-left, .tri-right-top, .tri-right-bottom').hide();
             }
         }, 1000);

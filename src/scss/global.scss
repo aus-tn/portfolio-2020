@@ -78,7 +78,7 @@ header {
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 760px) {
 	header {
 		left: 3%;
 	}
@@ -178,7 +178,7 @@ nav .fa-times {
 		display: block;
 	}
 }
-@media (max-width: 1000px) {
+@media (max-width: 760px) {
 	.tri-pad {
 		padding: 2.5% !important;
 	}
@@ -189,7 +189,8 @@ _::-webkit-full-page-media,
 _:future,
 :root .tri-left .tri-content {
 	padding-bottom: 0 !important;
-	min-height: 100vh;
+	height: auto;
+	min-height: 97vh;
 }
 _::-webkit-full-page-media,
 _:future,
@@ -240,7 +241,7 @@ _:future,
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 760px) {
 	%tri-mobile {
 		width: 100%;
 		position: relative;
@@ -310,7 +311,7 @@ _:future,
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 760px) {
 	#brand-logos {
 		width: 100%;
 	}
@@ -409,10 +410,6 @@ _:future,
 }
 
 @media (max-width: 900px) {
-	//compensate for height management
-	#tri-right-bottom-lp h1 {
-		padding-top: 200px;
-	}
 	.lp-col {
 		width: 100%;
 		margin-bottom: 30px;
@@ -422,6 +419,13 @@ _:future,
 	}
 	.lp-col:last-child {
 		padding-bottom: 100px;
+	}
+}
+
+@media (max-width: 760px) {
+	//compensate for bottom 0 instead of top as showcase has w\ mobile top bars
+	#tri-right-bottom-lp h1 {
+		padding-top: 150px;
 	}
 }
 
@@ -475,7 +479,7 @@ _:future,
 	float: right;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 760px) {
 	%sc {
 		width: 80%;
 		margin: 10%;
