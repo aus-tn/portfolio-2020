@@ -146,6 +146,10 @@ _:future,
 :root #brand-logos img {
   width: 65px; }
 
+@media (max-width: 760px) {
+  :root .tri-left .tri-content {
+    min-height: 97vh; } }
+
 .tri-right-top, .tri-right-bottom {
   width: 50%;
   position: absolute;
