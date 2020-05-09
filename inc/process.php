@@ -17,7 +17,7 @@
             <li>Adobe Photoshop, Illustrator</li>
             <li>Prototyping, Adobe XD</li>
             <li>HTML, CSS, SASS</li>
-            <li>JS, jQuery, AJAX, Gulp</li>
+            <li>JS, React, jQuery, Ionic, Gulp, AJAX, JSON</li>
             <li>Bootstrap, Foundation</li>
             <li>Git, GitLab, GitHub</li>
             <li>PHP, Twig, REST API</li>
