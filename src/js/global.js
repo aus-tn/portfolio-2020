@@ -88,7 +88,6 @@ $(document).ready(function () {
         else {
             var topSetMobileVal = 'inherit';
         }
-        console.log('width out: ' + widthOutput + 'top: ' + topSetMobileVal);
         $(btnId).css({
             '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
             'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
@@ -103,6 +102,7 @@ $(document).ready(function () {
         //let animation complete before hiding on mobile for height control
         setTimeout(function () {
             $(btnIdOpp).hide();
+            $('.sc-row-contain').hide();
             if (widthOutput < 1000) {
                 $('body').css({ 'background': bodyBG });//compensate for 100%/vh not accurate on mobile
                 $('.tri-left, .tri-right-top, .tri-right-bottom').hide();
