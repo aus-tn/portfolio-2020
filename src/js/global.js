@@ -145,4 +145,6 @@ $(document).ready(function () {
         });
     }
 
+    /*--- Flexbox - showcase ---*/
+    $('.sc-left img, .sc-right img').fluidbox();
 });
