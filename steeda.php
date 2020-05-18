@@ -25,6 +25,7 @@
                         models.
                     </p>
                     <p class="mt0">
+                        <h3>Main Accomplishments</h3>
                         <ul>
                             <li>Redesign of their online brand standards. </li>
                             <li>Redesign and rebuild of their four major ecommerce sites.</li>
@@ -80,7 +81,7 @@
             <div class="sc-contain">
                 <div class="sc-right"><img src="img/Steeda-3.png" alt="Steeda" /></div>
                 <div class="sc-left">
-                    <h2>Desing &amp; Development</h2>
+                    <h2>Design &amp; Development</h2>
                     <p class="mt0">The information hierarchy was built upon the most popular parts reported by Google
                         Analytics. The navigation and sub navigation then mirrored the categorization of parts (starting
                         at model, then to year, category, then sub-category), The users were almost always car

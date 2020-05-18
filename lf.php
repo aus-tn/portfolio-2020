@@ -23,7 +23,8 @@
                         families and individuals. The goal was to provide a luxurious, sustainable, and allergy friendly
                         alternative to normal bedding via a eucalyptus fibered alternative, sold on an ecommerce model.
                     </p>
-                    <p><strong>Main Accomplishments</strong>
+                    <p class="mt0">
+                        <h3>Main Accomplishments</h3>
                         <ul>
                             <li>New website created on Shopify</li>
                             <li>New site, email, ads, and social marketing materials created</li>
