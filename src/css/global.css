@@ -290,7 +290,8 @@ _:future,
   .lp-col ul {
     text-align: left;
     width: 210px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    list-style: square; }
     .lp-col ul li {
       padding-top: 10px;
       font-size: 18px; }

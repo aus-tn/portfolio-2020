@@ -1,7 +1,7 @@
 <section id="tri-right-bottom-lp">
     <h1>Process</h1>
     <div class="lp-col">
-        <h2>Research</h2>
+        <h2>1. Research</h2>
         <ul>
             <li>SWOT Analysis</li>
             <li>User &amp; Company Goals</li>
@@ -12,7 +12,7 @@
         </ul>
     </div>
     <div class="lp-col">
-        <h2>Build</h2>
+        <h2>2. Build</h2>
         <ul>
             <li>Adobe Photoshop, Illustrator</li>
             <li>Prototyping, Adobe XD</li>
@@ -25,7 +25,7 @@
         </ul>
     </div>
     <div class="lp-col">
-        <h2>Test</h2>
+        <h2>3. Test</h2>
         <ul>
             <li>User Testing</li>
             <li>Google Analytics ROI & KPI</li>
