@@ -3,33 +3,33 @@
     <div class="lp-col">
         <h2>1. Research</h2>
         <ul>
-            <li>SWOT Analysis</li>
             <li>User &amp; Company Goals</li>
-            <li>Google Analytics Analysis</li>
-            <li>User Profiles</li>
             <li>Information Architecture</li>
-            <li>Sketching, Wireframing</li>
+            <li>User &amp; Process Flows</li>
+            <li>Wire-framing</li>
         </ul>
     </div>
     <div class="lp-col">
         <h2>2. Build</h2>
         <ul>
-            <li>Adobe Photoshop, Illustrator</li>
-            <li>Prototyping, Adobe XD</li>
-            <li>HTML, CSS, SASS</li>
-            <li>JS, React, jQuery, Ionic, Gulp, AJAX, JSON</li>
-            <li>Bootstrap, Foundation</li>
-            <li>Git, GitLab, GitHub</li>
-            <li>PHP, Twig, REST API</li>
-            <li>Craft, Shopify, WordPress</li>
+            <li>Brand Standards</li>
+            <li>Design System &amp; Components</li>
+            <li>Prototyping</li>
+            <li>XD, Photoshop &amp; Illustrator</li>
+            <li>HTML, CSS, SASS &amp; BEM</li>
+            <li>JS, jQuery, React &amp; Gulp</li>
+            <li>Twitter Bootstrap</li>
+            <li>Git</li>
+            <li>PHP &amp; Twig</li>
+            <li>Craft, Shopify &amp; WordPress</li>
         </ul>
     </div>
     <div class="lp-col">
         <h2>3. Test</h2>
         <ul>
-            <li>User Testing</li>
-            <li>Google Analytics ROI & KPI</li>
-            <li>A/B Testing</li>
+            <li>Google Analytics</li>
+            <li>Google PageSpeed Insights</li>
+            <li>User &amp; A/B Testing</li>
         </ul>
     </div>
 </section>

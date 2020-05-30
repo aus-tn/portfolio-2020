@@ -8,12 +8,12 @@
 
     <?php include 'inc/nav.php';?>
 
-    <!--- UX/UI Designer --->
+    <!--- UX Engineer --->
 
     <section class="tri-left">
         <div class="tri-content">
             <div class="tri-pad">
-                <h1>UX/UI Designer</h1>
+                <h1>UX Engineer</h1>
                 <h2 class="mt0">Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
                 <h3>other major brands worked with</h3>
                 <div id="brand-logos">

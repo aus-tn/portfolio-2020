@@ -1,7 +1,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
-    <title>UX/UI Designer - Austin Norris</title>
+    <title>UX Engineer - Austin Norris</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/fa.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
