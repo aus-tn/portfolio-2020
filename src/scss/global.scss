@@ -40,6 +40,11 @@ h1 {
 	//compensate for header
 	padding-top: 100px;
 	font-size: 40px;
+	a#info,
+	a#info:hover,
+	a#info:visited {
+		color: #fff;
+	}
 }
 
 h2 {
@@ -354,6 +359,23 @@ _:future,
 	background-color: transparent;
 }
 
+.btn.back {
+	margin-top: -20px;
+	display: block;
+	width: 110px;
+	i {
+		vertical-align: middle;
+		padding-right: 10px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 900px) {
+	.btn.back {
+		margin-top: 120px;
+	}
+}
+
 /*-- internal sections--*/
 
 %tri-lp {
@@ -396,6 +418,14 @@ _:future,
 		li {
 			padding-top: 10px;
 			font-size: 18px;
+			a.cert {
+				color: #fff;
+				display: block;
+				clear: left;
+				padding-top: 10px;
+				font-size: 12px;
+				text-transform: uppercase;
+			}
 		}
 	}
 	h2 i {

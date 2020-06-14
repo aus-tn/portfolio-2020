@@ -4,32 +4,44 @@
         <h2>1. Research</h2>
         <ul>
             <li>User &amp; Company Goals</li>
-            <li>Information Architecture</li>
+            <li>Information Architecture Development<a
+                    href="https://www.udemy.com/certificate/UC-f0a64fc1-563b-4626-abc5-3e98fa22b151/" class="cert"
+                    target="_blank">Certification</a></li>
             <li>User &amp; Process Flows</li>
-            <li>Wire-framing</li>
+            <li>Wire-framing: Adobe Comp</li>
         </ul>
     </div>
     <div class="lp-col">
-        <h2>2. Build</h2>
+        <h2>2. Design &amp; Build UI</h2>
         <ul>
             <li>Brand Standards</li>
-            <li>Design System &amp; Components</li>
-            <li>Prototyping</li>
-            <li>XD, Photoshop &amp; Illustrator</li>
-            <li>HTML, CSS, SASS &amp; BEM</li>
-            <li>JS, jQuery, React &amp; Gulp</li>
-            <li>Twitter Bootstrap</li>
-            <li>Git</li>
-            <li>PHP &amp; Twig</li>
+            <li>Design System &amp; Components<a
+                    href="https://www.udemy.com/certificate/UC-d16445ca-8914-4c5a-98fc-27923f68e0af/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=email"
+                    class="cert" target="_blank">Certification</a></li>
+            <li>Prototyping: Adobe XD, Figma, &amp; Invision</li>
+            <li>Adobe Illustrator &amp; Photoshop</li>
+            <li>HTML, CSS, SASS &amp; BEM<a href="https://certification.w3schools.com/w3certified.asp?email=7800102"
+                    class="cert" target="_blank">Certifications</a></li>
+            <li>JS, jQuery, React &amp; Gulp<a href="https://certification.w3schools.com/w3certified.asp?email=7800102"
+                    class="cert" target="_blank">Certifications</a></li>
+            <li>Twitter Bootstrap &amp; Foundation</li>
+            <li>Git, GitHub, GitLab &amp; Bitbucket</li>
+            <li>PHP &amp; Twig<a href="https://certification.w3schools.com/w3certified.asp?email=7800102" class="cert"
+                    target="_blank">Certification</a></li>
             <li>Craft, Shopify &amp; WordPress</li>
         </ul>
     </div>
     <div class="lp-col">
-        <h2>3. Test</h2>
+        <h2>3. Test &amp; Optimize</h2>
         <ul>
-            <li>Google Analytics</li>
+            <li>A/B Testing</li>
+            <li>Google Analytics<a
+                    href="https://analytics.google.com/analytics/academy/certificate/W7l2SuLqT-CSWac1NibXQg"
+                    class="cert" target="_blank">CERTIFICATION</a></li>
             <li>Google PageSpeed Insights</li>
-            <li>User &amp; A/B Testing</li>
+            <li>Search Engine Optimization</li>
+            <li>User Test Design</li>
+            <li>User Testing Execution</li>
         </ul>
     </div>
 </section>

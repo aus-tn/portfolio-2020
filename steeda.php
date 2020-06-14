@@ -12,6 +12,8 @@
         <div class="sc-row">
             <div class="sc-contain mb0">
                 <div class="sc-left mb0">
+                    <a href="#" class="btn back" id="btn-showcase"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                        SHOWCASE</a>
                     <h1>Steeda</h1>
                 </div>
             </div>
@@ -33,6 +35,36 @@
                             <li>Implemented and managed Asana project management system and design procedures.</li>
                             <li>Re-setup Google Analytics reporting and goals.</li>
                         </ul>
+                    </p>
+                </div>
+            </div>
+            <svg height="0" width="0" class="svg-clip">
+                <defs>
+                    <clipPath id="mobile-clip" clipPathUnits="objectBoundingBox">
+                        <polygon fill="none" points="0,0 1,0 1,1 0,.93" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section class="sc-row-contain">
+        <div class="sc-row">
+            <div class="sc-contain">
+                <div class="sc-right"><img src="img/Steeda_Wire.png" alt="Steeda Wireframe" /></div>
+                <div class="sc-left">
+                    <h2>Components</h2>
+                    <p class="mt0">Hero (top left): Re-useable as a masthead item at the top of pages, or
+                        as an informative separator
+                        with a prominent call to action.</p>
+                    <p class="mt0">Featured Product (top right): Allows displaying products in a manner that
+                        both grabs
+                        attention but doesn't interupt the users visual flow, or scream for attention while browsing.
+                    </p>
+                    <p class="mt0">Slider (bottom): Allows maximizing exposure to applicable items and
+                        products in
+                        the displayed category who's header is shown above on desktop. On mobile, the items would then
+                        be 100%, with the ability to tap the arrows, or swipe the image to slide to the next product.
                     </p>
                 </div>
             </div>

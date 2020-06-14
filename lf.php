@@ -12,6 +12,8 @@
         <div class="sc-row">
             <div class="sc-contain mb0">
                 <div class="sc-left mb0">
+                    <a href="#" class="btn back" id="btn-showcase"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                        SHOWCASE</a>
                     <h1>Living Fresh</h1>
                 </div>
             </div>
@@ -31,6 +33,35 @@
                             <li>New brand standards created</li>
                             <li>SEO research, optimization and analytics</li>
                         </ul>
+                    </p>
+                </div>
+            </div>
+            <svg height="0" width="0" class="svg-clip">
+                <defs>
+                    <clipPath id="mobile-clip" clipPathUnits="objectBoundingBox">
+                        <polygon fill="none" points="0,0 1,0 1,1 0,.93" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section class="sc-row-contain">
+        <div class="sc-row">
+            <div class="sc-contain">
+                <div class="sc-right"><img src="img/LFC_Wire.png" alt="LFC Wireframe" /></div>
+                <div class="sc-left">
+                    <h2>Components</h2>
+                    <p class="mt0">Hero (top left): Re-useable as a masthead item at the top of pages, or
+                        as an informative separator
+                        with a prominent call to action.</p>
+                    <p class="mt0">Shop (top right): Allows multiple filtering of products. Displays availbale colors in
+                        thumbnails, heading, description, and flairable price (sale, etc.) in a manner that maximizes
+                        user visual flow through aligment and styling of the elements.
+                    </p>
+                    <p class="mt0">3 Column (bottom left): Allowing each of the images, headings, descriptions, and
+                        button to be configurable or left out enabled a high amount of customization for the CMS users,
+                        providing consistency and variability.
                     </p>
                 </div>
             </div>

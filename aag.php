@@ -12,6 +12,8 @@
         <div class="sc-row">
             <div class="sc-contain mb0">
                 <div class="sc-left mb0">
+                    <a href="#" class="btn back" id="btn-showcase"><i class="fa fa-angle-left" aria-hidden="true"></i>
+                        SHOWCASE</a>
                     <h1>AMSI/AAG</h1>
                 </div>
             </div>
@@ -36,6 +38,35 @@
                                 400%.</li>
                             <li>Implemented and managed Asana project management system and design procedures.</li>
                         </ul>
+                    </p>
+                </div>
+            </div>
+            <svg height="0" width="0" class="svg-clip">
+                <defs>
+                    <clipPath id="mobile-clip" clipPathUnits="objectBoundingBox">
+                        <polygon fill="none" points="0,0 1,0 1,1 0,.93" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <section class="sc-row-contain">
+        <div class="sc-row">
+            <div class="sc-contain">
+                <div class="sc-right"><img src="img/AMSI_Wire.png" alt="AMSI Wireframe" /></div>
+                <div class="sc-left">
+                    <h2>Components</h2>
+                    <p class="mt0">Hero (top left): Directs users to their most desired location on the site. The triple
+                        call to action columns allowed configuration of an image, overlay, and call to action.
+                        Allowing
+                        separation of the most important items in a way that manages visual noise.</p>
+                    <p class="mt0">Search (top right): Breakes up the
+                        content with a colored background that reminded the user that the option is
+                        available.</p>
+                    <p class="mt0">Variable Columns (bottom right): Configurable background color or image with
+                        overlay and a code area allowed the CMS users or designers a quick and easy way to add their
+                        customizations in a responsive, and design consistent manner.
                     </p>
                 </div>
             </div>

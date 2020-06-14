@@ -13,7 +13,10 @@
     <section class="tri-left">
         <div class="tri-content">
             <div class="tri-pad">
-                <h1>UX Engineer</h1>
+                <h1>UX Engineer
+                    <sup><a href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6
+" id="info" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i></a></sup>
+                </h1>
                 <h2 class="mt0">Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
                 <h3>other major brands worked with</h3>
                 <div id="brand-logos">
