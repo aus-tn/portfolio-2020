@@ -1,5 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include 'inc/head.php';?>
+
+<body>
+
+<?php include 'inc/header.php';?>
+
+<?php include 'inc/nav.php';?>
+
 <section id="tri-right-top-lp">
-    <h1>Showcase</h1>
+
+<h1>Showcase</h1>
+
     <div class="lp-col">
         <h2>AMSI/AAG</h2>
         <img src="img/AAG-1.png" alt="AMSI" />
@@ -7,6 +20,7 @@
             dealerships</p>
         <a href="aag.php" class="btn">VIEW</a>
     </div>
+
     <div class="lp-col">
         <h2>Living Fresh</h2>
         <img src="img/LFC-1.png" alt="LFC" />
@@ -14,10 +28,18 @@
             fabrics company</p>
         <a href="lf.php" class="btn">VIEW</a>
     </div>
+
     <div class="lp-col">
         <h2>Steeda</h2>
         <img src="img/Steeda-1.png" alt="Steeda" />
         <p>Largest third party Ford performance parts manufacturer in the world</p>
         <a href="steeda.php" class="btn">VIEW</a>
     </div>
+
+    <div class="clear"></div>
+
 </section>
+
+</body>
+
+</html>

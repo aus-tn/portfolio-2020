@@ -1,147 +1,76 @@
 $(document).ready(function () {
+	var widthOutput = window.innerWidth;
+	function reportWindowSize() {
+		widthOutput = window.innerWidth;
+	}
+	window.addEventListener("resize", reportWindowSize);
 
-    var widthOutput = window.innerWidth;
-    function reportWindowSize() {
-        widthOutput = window.innerWidth;
-    }
-    window.addEventListener('resize', reportWindowSize);
+	/*--- nav ---*/
 
-    /*--- nav ---*/
+	$("nav i").click(function () {
+		$("nav .fa-bars").hide();
+		$("nav").css({
+			"-webkit-clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+			"clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+			width: "100%",
+			height: "100vh",
+		});
+		$("#nav-content .fa-times, #nav-content").fadeIn("slow");
+		//let animation complete before hiding on mobile for height control
+		setTimeout(function () {
+			if (widthOutput < 1000) {
+				$("body").css({ background: "#fff" }); //compensate for 100%/vh not accurate on mobile
+			}
+		}, 1000);
+	});
 
-    $('nav i').click(function () {
-        $('nav .fa-bars').hide();
-        $('nav').css({
-            '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-            'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-            'width': '100%',
-            'height': '100vh'
-        });
-        $('#nav-content .fa-times, #nav-content').fadeIn('slow');
-        //let animation complete before hiding on mobile for height control
-        setTimeout(function () {
-            if (widthOutput < 1000) {
-                $('body').css({ 'background': '#fff' });//compensate for 100%/vh not accurate on mobile
-            }
-        }, 1000);
+	$("#nav-content .fa-times").click(function () {
+		$("#nav-content .fa-times, #nav-content").fadeOut("fast", function () {
+			if (navigator.appVersion.indexOf("Edge") != -1) {
+				$("nav").css({
+					height: "60px",
+					width: "60px",
+				});
+			} else {
+				$("nav").css({
+					"-webkit-clip-path": "polygon(0 0, 100% 0, 100% 100%, 50% 50%)",
+					"clip-path": "polygon(0 0, 100% 0, 100% 100%, 50% 50%)",
+					width: "80px",
+					height: "100px",
+				});
+			}
+			$("nav .fa-bars").fadeIn("fast");
+		});
+	});
 
-    });
+	/*--- Lottie ---*/
 
-    $('#nav-content .fa-times, #nav-links a').click(function () {
-        $('#nav-content .fa-times, #nav-content').
-            fadeOut('fast', function () {
-                if (navigator.appVersion.indexOf("Edge") != -1) {
-                    $('nav').css({
-                        'height': '60px',
-                        'width': '60px'
-                    });
-                }
-                else {
-                    $('nav').css({
-                        '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 50% 50%)',
-                        'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 50% 50%)',
-                        'width': '80px',
-                        'height': '100px'
-                    });
-                }
-                $('nav .fa-bars').fadeIn('fast');
-            });
-    });
+	//Showcase
+	lottie.loadAnimation({
+		container: document.getElementById("lottieShowCase"),
+		renderer: "svg",
+		loop: true,
+		autoplay: true,
+		path: "./js/lottie/showcase.json",
+	});
 
-    /*--- Lottie ---*/
+	//Process
+	lottie.loadAnimation({
+		container: document.getElementById("lottieProcess"),
+		renderer: "svg",
+		loop: true,
+		autoplay: true,
+		path: "./js/lottie/process.json",
+	});
 
-    //Showcase
-    lottie.loadAnimation({
-        container: document.getElementById('lottieShowCase'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: './js/lottie/showcase.json'
-    });
-
-    //Process
-    lottie.loadAnimation({
-        container: document.getElementById('lottieProcess'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: './js/lottie/process.json'
-    });
-
-    /*--- internal sections ---*/
-
-    $('#btn-showcase, #btn-process').click(function () {
-        var btnId = $(this).attr('id');
-        if (btnId == 'btn-showcase') {
-            var btnId = '#tri-right-top-lp';
-            var bodyBG = '#479dff';
-            var btnIdOpp = '#tri-right-bottom-lp';
-        }
-        else {
-            var btnId = '#tri-right-bottom-lp';
-            var bodyBG = '#3b72b3';
-            var btnIdOpp = '#tri-right-top-lp';
-        }
-        if (widthOutput < 770) {
-            //Mobile lp sections both need top 0, dektop needs top/bottom difference for animation origin
-            var topSetMobileVal = '0';
-        }
-        else {
-            var topSetMobileVal = 'inherit';
-        }
-        $(btnId).css({
-            '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-            'clip-path': 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-            'width': '100%',
-            'height': '100vh',
-            'display': 'block',
-            'overflow': 'auto',
-            'z-index': '4',
-            'top': topSetMobileVal
-        });
-        $(btnIdOpp).css({ 'z-index': '1' });
-        //let animation complete before hiding on mobile for height control
-        setTimeout(function () {
-            $(btnIdOpp).hide();
-            $('.sc-row-contain').hide();
-            if (widthOutput < 1000) {
-                $('body').css({ 'background': bodyBG });//compensate for 100%/vh not accurate on mobile
-                $('.tri-left, .tri-right-top, .tri-right-bottom').hide();
-            }
-        }, 1000);
-    });
-
-    if (widthOutput < 1000) {
-        //hide header on scroll for mobile
-        $('#tri-right-top-lp, #tri-right-bottom-lp').scroll(function () {
-            var scrollTop = $(this).scrollTop();
-            if (scrollTop > 65) {
-                $('header').fadeOut();
-            }
-            else {
-                $('header').fadeIn();
-            }
-        });
-    }
-
-    // Non-'True' Edge - clip-path not yet supported
-    if (navigator.appVersion.indexOf("Edge") != -1) {
-        $('header').css({
-            'top': '60px'
-        });
-        $('nav').css({
-            'border': '1px solid white',
-            'border-bottom-left-radius': '10px',
-            'height': '60px',
-            'width': '60px'
-        });
-        $('.tri-left .tri-content').css({
-            'height': '95vh'
-        });
-        $('.tri-content h2').css({
-            'margin-top': '15%'
-        });
-        $('.tri-right-bottom, .tri-right-top').css({
-            'width': '45%'
-        });
-    }
+	/*--- Header ---*/
+	$("body").on("scroll", function () {
+		var scrollTop = $(this).scrollTop();
+		console.log("scroll" + scrollTop);
+		if (scrollTop > 65) {
+			$("header").fadeOut();
+		} else {
+			$("header").fadeIn();
+		}
+	});
 });

@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <?php include 'inc/head.php';?>
 
 <body>
+
     <?php include 'inc/header.php';?>
 
     <?php include 'inc/nav.php';?>
 
-    <!--- UX Engineer --->
-
     <section class="tri-left">
         <div class="tri-content">
             <div class="tri-pad">
-                <h1>UX Engineer
-                    <sup><a href="https://uxplanet.org/ux-engineers-what-we-are-2b0c4d10b3a6
-" id="info" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i></a></sup>
+                <h1>UX Designer &amp; Dev
                 </h1>
                 <h2 class="mt0">Currently at <img src="img/nascar-logo.png" alt="NASCAR" id="currentJob" /></h2>
                 <h3>other major brands worked with</h3>
@@ -56,46 +53,25 @@
         </svg>
     </section>
 
-    <!--- Showcase --->
-
     <section class="tri-right-top">
         <div class="tri-content">
             <div class="tri-vert">
                 <h2 class="mb0 mt0">Showcase</h2>
                 <div id="lottieShowCase"></div>
-                <a href="#" class="btn" id="btn-showcase">VIEW</a>
+                <a href="showcase.php" class="btn btn-showcase">VIEW</a>
             </div>
-            <svg height="0" width="0" class="svg-clip">
-                <defs>
-                    <clipPath id="hero-clip-2" clipPathUnits="objectBoundingBox">
-                        <polygon fill="none" points="0,0 1,0 1,.8 0,1" />
-                    </clipPath>
-                </defs>
-                <defs>
-                    <clipPath id="mobile-clip" clipPathUnits="objectBoundingBox">
-                        <polygon fill="none" points="0,0 1,0 1,1 0,.93" />
-                    </clipPath>
-                </defs>
-            </svg>
-        </div>
         </div>
     </section>
-
-    <?php include 'inc/showcase.php';?>
-
-    <!--- Process --->
 
     <section class="tri-right-bottom">
         <div class="tri-content">
             <div class="tri-vert">
-                <h2 class="mb0 mt0">Process</h2>
+                <h2 class="mb0 mt0">Skills</h2>
                 <div id="lottieProcess"></div>
-                <a href="#" class="btn" id="btn-process">VIEW</a>
+                <a href="skills.php" class="btn btn-process">VIEW</a>
             </div>
         </div>
     </section>
-
-    <?php include 'inc/process.php';?>
 
 </body>
 

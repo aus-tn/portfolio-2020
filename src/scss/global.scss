@@ -14,6 +14,15 @@ $gray: #333;
 $light-gray: #f3f3f3;
 $white: #fff;
 
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
 body {
 	font-family: $font-body;
 	color: $white;
@@ -27,11 +36,21 @@ body {
 	margin-bottom: 0 !important;
 }
 
+.clear {
+	clear: both;
+}
+@media (max-width: 900px) {
+	.clear {
+		margin-bottom: 100px;
+	}
+}
+
 /*--- headings ---*/
 
 %header {
 	font-family: $font-header;
 	text-transform: uppercase;
+	margin-top: 0;
 }
 
 h1 {
@@ -84,7 +103,7 @@ header {
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 	header {
 		left: 3%;
 	}
@@ -124,7 +143,7 @@ nav .fa-times {
 
 #nav-links {
 	position: absolute;
-	top: 20px;
+	top: 25px;
 	left: 20px;
 	width: 300px;
 	a {
@@ -184,9 +203,18 @@ nav .fa-times {
 		display: block;
 	}
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 	.tri-pad {
 		padding: 2.5% !important;
+		h1 {
+			font-size: 30px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		h3 {
+			font-size: 15px;
+		}
 	}
 }
 
@@ -203,7 +231,7 @@ _:future,
 :root #brand-logos img {
 	width: 65px;
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 	:root .tri-left .tri-content {
 		min-height: 97vh;
 	}
@@ -219,13 +247,7 @@ _:future,
 	@extend %tri-right;
 	top: 0;
 	z-index: 2;
-	background: $blue-dark;
-	.tri-content {
-		background: $blue-light;
-		z-index: 2;
-		-webkit-clip-path: url(#hero-clip-2);
-		clip-path: url(#hero-clip-2);
-	}
+	background: $blue-light;
 }
 
 .tri-right-bottom {
@@ -246,13 +268,13 @@ _:future,
 		margin: 0;
 		position: absolute;
 		text-align: center;
-		top: 45%;
+		top: 50%;
 		transform: translateY(-50%);
 		text-align: center;
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 	%tri-mobile {
 		width: 100%;
 		position: relative;
@@ -261,12 +283,13 @@ _:future,
 	%tri-content-mobile {
 		margin-left: 0;
 		width: 100%;
+		height: auto;
+		min-height: 100vh;
 	}
 	.tri-left {
 		@extend %tri-mobile;
 		background-color: $blue-light;
 		.tri-content {
-			height: auto;
 			padding-bottom: 20%;
 			@extend %tri-content-mobile;
 			-webkit-clip-path: url(#mobile-clip);
@@ -278,11 +301,8 @@ _:future,
 	}
 	.tri-right-top {
 		@extend %tri-mobile;
-		background-color: $blue-dark;
 		.tri-content {
 			@extend %tri-content-mobile;
-			-webkit-clip-path: url(#mobile-clip);
-			clip-path: url(#mobile-clip);
 		}
 	}
 	.tri-right-bottom {
@@ -322,7 +342,7 @@ _:future,
 	}
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 	#brand-logos {
 		width: 100%;
 	}
@@ -370,39 +390,29 @@ _:future,
 	}
 }
 
-@media (max-width: 900px) {
-	.btn.back {
-		margin-top: 120px;
+/*-- internal pages--*/
+
+%tri-lp {
+	h1 {
+		text-align: center;
+		padding-top: 160px;
+		padding-bottom: 60px;
 	}
 }
 
-/*-- internal sections--*/
-
-%tri-lp {
-	overflow: hidden;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	right: 0;
-	z-index: 3;
-	font-family: $font-body;
-	text-align: center;
-	transition: width 1s, height 1s, clip-path 1s, -webkit-clip-path 1s;
+@media (min-width: 900px) {
+	%tri-lp {
+		height: 100vh;
+	}
 }
 
 #tri-right-bottom-lp {
 	@extend %tri-lp;
-	-webkit-clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
-	clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%);
-	bottom: 0;
 	background-color: $blue-dark;
 }
 
 #tri-right-top-lp {
 	@extend %tri-lp;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 51%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 48% 51%);
-	top: 0;
 	background-color: $blue-light;
 }
 
@@ -410,21 +420,18 @@ _:future,
 	width: 33%;
 	display: inline;
 	float: left;
+	text-align: center;
 	ul {
-		text-align: left;
-		width: 220px;
 		margin: 0 auto;
-		list-style: square;
+		list-style: none;
+		padding: 0;
 		li {
-			padding-top: 10px;
+			padding-top: 25px;
 			font-size: 18px;
 			a.cert {
 				color: #fff;
-				display: block;
-				clear: left;
-				padding-top: 10px;
+				padding-left: 10px;
 				font-size: 12px;
-				text-transform: uppercase;
 			}
 		}
 	}
@@ -449,13 +456,10 @@ _:future,
 @media (max-width: 900px) {
 	.lp-col {
 		width: 100%;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 		h2 {
 			padding-top: 30px;
 		}
-	}
-	.lp-col:last-child {
-		padding-bottom: 100px;
 	}
 }
 
@@ -467,7 +471,6 @@ _:future,
 	margin: 0 auto;
 	color: #333;
 	line-height: 2;
-	margin-bottom: 100px;
 	img {
 		width: 100%;
 		height: auto;
@@ -477,15 +480,22 @@ _:future,
 	}
 }
 
-%sc-row {
-	-webkit-clip-path: url(#mobile-clip);
-	clip-path: url(#mobile-clip);
+@media (max-width: 900px) {
+	.sc-row:first-of-type {
+		h1 {
+			text-align: center;
+		}
+		img {
+			width: 100%;
+			max-width: 500px;
+			display: block;
+			margin: 0 auto;
+		}
+	}
 }
 
-.sc-row-contain:first-of-type {
-	.sc-row {
-		background: $blue-light;
-	}
+.sc-row:first-of-type {
+	background: $blue-light !important;
 	.sc-contain .sc-left {
 		color: $white !important;
 	}
@@ -495,26 +505,17 @@ _:future,
 	}
 }
 
-.sc-row-contain:nth-child(odd) {
+.sc-row:nth-child(even) {
 	background: $white;
 }
 
 .sc-row:nth-child(odd) {
-	@extend %sc-row;
 	background: $light-gray;
-}
-
-.sc-row-contain:nth-child(even) {
-	background: $light-gray;
-	.sc-row {
-		@extend %sc-row;
-		background: $white;
-	}
 }
 
 %sc {
 	display: inline;
-	margin: 5%;
+	margin: 6% 5%;
 	width: 40%;
 }
 
@@ -528,7 +529,7 @@ _:future,
 	float: right;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
 	%sc {
 		width: 80%;
 		margin: 10%;
