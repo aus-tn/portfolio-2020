@@ -43,26 +43,6 @@
 
 <div class="sc-row">
     <div class="sc-contain">
-        <div class="sc-right"><img src="img/AMSI_Wire.png" alt="AMSI Wireframe" /></div>
-        <div class="sc-left">
-            <h2>Components</h2>
-            <p class="mt0">Hero (top left): Directs users to their most desired location on the site. The triple
-                call to action columns allowed configuration of an image, overlay, and call to action.
-                Allowing
-                separation of the most important items in a way that manages visual noise.</p>
-            <p class="mt0">Search (top right): Breakes up the
-                content with a colored background that reminded the user that the option is
-                available.</p>
-            <p class="mt0">Variable Columns (bottom right): Configurable background color or image with
-                overlay and a code area allowed the CMS users or designers a quick and easy way to add their
-                customizations in a responsive, and design consistent manner.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="sc-row">
-    <div class="sc-contain">
         <div class="sc-left"><img src="img/AAG-2.png" alt="AMSI" /></div>
         <div class="sc-right">
             <h2>Research &amp; Testing</h2>
@@ -115,6 +95,26 @@
                 AV, media buyer, account executive and management teams to collect and analyze performance.</p>
         </div>
     </div>            
+</div>
+
+<div class="sc-row">
+    <div class="sc-contain">
+        <div class="sc-right"><img src="img/AMSI_Wire.png" alt="AMSI Wireframe" /></div>
+        <div class="sc-left">
+            <h2>Components</h2>
+            <p class="mt0">Hero (top left): Directs users to their most desired location on the site. The triple
+                call to action columns allowed configuration of an image, overlay, and call to action.
+                Allowing
+                separation of the most important items in a way that manages visual noise.</p>
+            <p class="mt0">Search (top right): Breakes up the
+                content with a colored background that reminded the user that the option is
+                available.</p>
+            <p class="mt0">Variable Columns (bottom right): Configurable background color or image with
+                overlay and a code area allowed the CMS users or designers a quick and easy way to add their
+                customizations in a responsive, and design consistent manner.
+            </p>
+        </div>
+    </div>
 </div>
 
 </body>

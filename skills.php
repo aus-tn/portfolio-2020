@@ -16,7 +16,7 @@
     <div class="lp-col">
         <h2>Research</h2>
         <ul>
-            <li>User &amp; Company Interviews</li>
+            <li>User, Company &amp; Competitor Research</li>
             <li>Information Architecture<a
                     href="https://www.udemy.com/certificate/UC-f0a64fc1-563b-4626-abc5-3e98fa22b151/" class="cert"
                     target="_blank">CERT</a></li>
@@ -52,6 +52,7 @@
                     href="https://analytics.google.com/analytics/academy/certificate/W7l2SuLqT-CSWac1NibXQg"
                     class="cert" target="_blank">CERT</a></li>
             <li>Performance &amp; PageSpeed Insights</li>
+            <li>ADA Compliance</li>
             <li>User Testing</li>
         </ul>
     </div>
